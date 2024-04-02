@@ -85,7 +85,7 @@ a.normal {
   letter-spacing: 0px;
   line-height: 24px;
   font-size: 20px;
-  padding: auto;
+  padding: 0;
   margin: auto;
   text-decoration: underline;
 }
@@ -96,7 +96,7 @@ a.normal:hover {
 }
 
 .button {
-  width: 230px;
+  width: 250px;
   background: rgb(255, 255, 255, .8);
   border: 1;
   padding: 12px;
@@ -142,10 +142,10 @@ a.normal:hover {
 }
 
 .textbox1 {
-  background-color: rgba(33, 40, 43, 0.358);
+  background-image: linear-gradient(to right, rgba(33, 40, 43,.05), rgba(33, 40, 43, 0.358));
   border-radius: 20px;
-  padding: 30px;
-  margin-top: 30px;
+  padding: 24px 24px 24px 4px;
+  margin-top: 20px;
   max-width: 540px;
 }
 
@@ -161,6 +161,13 @@ a.normal:hover {
   box-shadow: 0 0 50px rgba(13, 66, 66, 0.722);
 }
 
+img {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  padding: 0;
+}
+
 #buttonbox {
   max-width: 1100px;
   align-content: center;
@@ -170,6 +177,8 @@ a.normal:hover {
   background-color: rgba(33, 40, 43, 0.502);
   border-radius: 20px;
   padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-bottom: 28px;
   box-shadow: 0 0 50px rgb(4, 21, 21);
 }
@@ -179,6 +188,7 @@ max-width: 1100px;
 text-align: center;
 margin: auto;
 margin-top: 60px;
+padding: 0;
 }
 
 
@@ -191,8 +201,22 @@ margin-top: 60px;
 
 
 @media (max-width: 1024px) {
+  body {
+    padding: 30px 30px 20px 30px;
+  }
   .column {
     width: 100%;
     flex: auto;
   }
+}
+
+@media (max-width: 500px) {
+  .column {
+    width: 100%;
+    flex: auto;
+  }
+
+  #center {
+    text-align: left;    
+    }
 }
