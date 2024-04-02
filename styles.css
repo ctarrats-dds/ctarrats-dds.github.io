@@ -212,9 +212,6 @@ padding: 0;
 
 
 @media (max-width: 1024px) {
-  body {
-    padding: 30px 30px 20px 30px;
-  }
   .column {
     width: 100%;
     flex: auto;
