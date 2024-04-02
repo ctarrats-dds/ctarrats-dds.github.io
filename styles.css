@@ -5,9 +5,11 @@ body {
   background-size: 100vw 100%;
   max-width: 1400px;
   margin: auto;
-  padding: 80px 30px 20px 30px;
+  padding: 0px 30px 20px 30px;
   font-family: "Space Grotesk", sans-serif;
   font-kerning: auto;
+  overflow: visible;
+
 }
 
 h1 {
@@ -138,7 +140,16 @@ a.normal:hover {
   margin: 10px auto 10px auto;
   text-align: center;
   align-content: center;
+}
 
+.nav {
+  height: 50px;
+  margin: auto auto 26px auto;
+  padding: 20px 0 0 0;
+  border-bottom: 1 px;
+  border-bottom-style: solid;
+  border-bottom-color: #ffffff;
+  vertical-align: auto;
 }
 
 .textbox1 {
