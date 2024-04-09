@@ -1,6 +1,4 @@
 
-   
-
 .usa-accordion {
     list-style-type: none;
     color: #1b1b1b;
@@ -12,47 +10,6 @@
     line-height: 1.5
 }
 
-.usa-accordion>ul li ul {
-    list-style: disc
-}
-
-
-.usa-accordion>ul li ul>li>ul {
-    list-style: circle
-}
-
-.usa-accordion>ul li ul>li>ul>li>ul {
-    list-style: square
-}
-
-.usa-accordion+.usa-accordion,
-.usa-accordion+.usa-accordion--bordered {
-    margin-top: .5rem
-}
-
-.usa-accordion--bordered .usa-accordion__content {
-    border-bottom: .25rem solid #f0f0f0;
-    border-left: .25rem solid #f0f0f0;
-    border-right: .25rem solid #f0f0f0;
-    padding-bottom: 1rem
-}
-
-.usa-accordion--bordered .usa-accordion__heading {
-    margin-bottom: 0
-}
-
-.usa-accordion__heading,
-.usa-prose .usa-accordion__heading {
-    font-family: Source Sans Pro Web, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
-    font-size: 1rem;
-    line-height: .9;
-    margin: 0
-}
-
-.usa-accordion__heading:not(:first-child),
-.usa-prose .usa-accordion__heading:not(:first-child) {
-    margin-top: .5rem
-}
 
 .usa-accordion__content {
     color: #1b1b1b;
@@ -62,36 +19,14 @@
     padding: 1rem 1.25rem calc(1rem - .25rem)
 }
 
-.usa-accordion__content>:first-child {
-    margin-top: 0
-}
-
-.usa-accordion__content>:last-child {
-    margin-bottom: 0
-}
-
-
-
 
 .usa-banner {
     font-family: Source Sans Pro Web, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
     font-size: 1rem;
     line-height: 1.5;
-    background-color: #f0f0f0
+    background-color: #f0f0f0;
 }
 
-@media all and (min-width:40em) {
-    .usa-banner {
-        font-size: .87rem;
-        padding-bottom: 0
-    }
-}
-
-.usa-banner .usa-accordion {
-    font-family: Source Sans Pro Web, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
-    font-size: 1rem;
-    line-height: 1.5
-}
 
 .usa-banner .grid-row {
     display: flex;
@@ -106,10 +41,7 @@
     }
 }
 
-.usa-banner__content,
-.usa-banner__header {
-    color: #1b1b1b
-}
+
 
 .usa-banner__content {
     margin-left: auto;
@@ -118,16 +50,11 @@
     background-color: transparent;
     font-size: 1rem;
     overflow: hidden;
-    padding: .25rem 1rem 1rem .5rem;
+    padding: .25rem 1rem 1rem 1rem;
     width: 100%;
 }
 
-@media all and (min-width:87.5em) {
-    .usa-banner__content {
-        padding-left: 3rem;
-        padding-right: 3rem;
-    }
-}
+
 
 @media all and (min-width:40em) {
     .usa-banner__content {
@@ -136,79 +63,38 @@
     }
 }
 
-.usa-banner__content p:first-child {
-    margin: 0
-}
-
 .usa-banner__guidance {
     display: flex;
     align-items: flex-start;
     max-width: 64ex;
-    padding-top: 1rem;
+    padding-top: 0rem;
+    
 }
 
-@media all and (min-width:40em) {
-    .usa-banner__guidance {
-        padding-top: 0;
-    }
-}
 
-.usa-banner__lock-image {
-    height: 1.5ex;
-    width: 1.21875ex
-}
-
-.usa-banner__lock-image path {
-    fill: currentColor
-}
-
-@media (forced-colors:active) {
-    .usa-banner__lock-image path {
-        fill: CanvasText
-    }
-}
 
 .usa-banner__inner {
     margin-left: auto;
     margin-right: auto;
     max-width: 87.5rem;
     padding-left: 1rem;
-    padding-right: 1rem;
+    padding-right: 0rem;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    padding-right: 0
+    padding-right: 0;
 }
 
-@media all and (min-width:87.5em) {
-    .usa-banner__inner {
-        padding-left: 3rem;
-        padding-right: 3rem
-    }
-}
-
-@media all and (min-width:40em) {
-    .usa-banner__inner {
-        align-items: center
-    }
-}
 
 .usa-banner__header {
     padding-bottom: .5rem;
-    padding-top: .5rem;
+    padding-top: .25rem;
     font-size: .8rem;
     font-weight: 400;
-    min-height: 3rem;
+    min-height: 2rem;
     position: relative
 }
 
-@media all and (min-width:40em) {
-    .usa-banner__header {
-        padding-bottom: .25rem;
-        padding-top: .25rem;
-        min-height: 0
-    }
-}
 
 .usa-banner__header-text {
     margin-bottom: 0;
@@ -218,117 +104,18 @@
     color: #1b1b1b;
 }
 
-.usa-banner__header-action {
-    color: #005ea2;
-    line-height: 1.1;
-    margin-bottom: 0;
-    margin-top: 2px;
-    text-decoration: underline
-}
 
-.usa-banner__header-action::after {
-    background-image: url(/sites/gsa.gov/themes/custom/gsa/dist/css/../img/usa-icons/expand_more.svg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 1rem 1rem;
-    display: inline-block;
-    height: 1rem;
-    width: 1rem;
-    content: "";
-    vertical-align: middle;
-    margin-left: auto
-}
 
-@supports ((-webkit-mask:url()) or (mask:url())) {
-    .usa-banner__header-action::after {
-        background: 0 0;
-        background-color: #005ea2;
-        -webkit-mask-image: url(/sites/gsa.gov/themes/custom/gsa/dist/css/../img/usa-icons/expand_more.svg), linear-gradient(transparent, transparent);
-        mask-image: url(/sites/gsa.gov/themes/custom/gsa/dist/css/../img/usa-icons/expand_more.svg), linear-gradient(transparent, transparent);
-        -webkit-mask-position: center center;
-        mask-position: center center;
-        -webkit-mask-repeat: no-repeat;
-        mask-repeat: no-repeat;
-        -webkit-mask-size: 1rem 1rem;
-        mask-size: 1rem 1rem
-    }
-
-    .usa-banner__header-action::after:hover {
-        background-color: #1a4480
-    }
-}
-
-.usa-banner__header-action:hover::after {
-    content: "";
-    background-color: #1a4480
-}
-
-.usa-banner__header-action:visited {
-    color: #54278f
-}
-
-.usa-banner__header-action:active,
-.usa-banner__header-action:hover {
-    color: #1a4480
-}
-
-@media all and (min-width:40em) {
-    .usa-banner__header-action {
-        display: none
-    }
-}
-
-@media (forced-colors:active) {
-    .usa-banner__header-action {
-        color: LinkText
-    }
-
-    .usa-banner__header-action::after {
-        background-color: ButtonText
-    }
-}
 
 .usa-banner__header-flag {
     float: left;
     margin-right: .5rem;
-    width: 1rem
+    width: 1rem;
+    margin-top: .1rem;
 }
 
-@media all and (min-width:40em) {
-    .usa-banner__header-flag {
-        margin-right: .5rem;
-        padding-top: 0
-    }
-}
 
-.usa-banner__header--expanded {
-    padding-right: 3.5rem
-}
 
-@media all and (min-width:40em) {
-    .usa-banner__header--expanded {
-        background-color: transparent;
-        display: block;
-        font-size: .8rem;
-        font-weight: 400;
-        min-height: 0;
-        padding-right: 0
-    }
-}
-
-.usa-banner__header--expanded .usa-banner__inner {
-    margin-left: 0
-}
-
-@media all and (min-width:40em) {
-    .usa-banner__header--expanded .usa-banner__inner {
-        margin-left: auto
-    }
-}
-
-.usa-banner__header--expanded .usa-banner__header-action {
-    display: none
-}
 
 .usa-banner__button {
     background-color: transparent;
@@ -349,7 +136,7 @@
     line-height: 1.1;
     padding: 0;
     text-decoration: none;
-    width: auto
+    width: auto;
 }
 
 .usa-banner__button:focus {
@@ -381,32 +168,9 @@
     text-decoration: underline
 }
 
-.usa-banner__button.usa-button--hover {
-    color: #1a4480
-}
 
-.usa-banner__button.usa-button--active {
-    color: #162e51
-}
 
-.usa-banner__button:disabled,
-.usa-banner__button:disabled:hover,
-.usa-banner__button[aria-disabled=true],
-.usa-banner__button[aria-disabled=true]:focus,
-.usa-banner__button[aria-disabled=true]:hover {
-    color: #757575
-}
 
-@media (forced-colors:active) {
-
-    .usa-banner__button:disabled,
-    .usa-banner__button:disabled:hover,
-    .usa-banner__button[aria-disabled=true],
-    .usa-banner__button[aria-disabled=true]:focus,
-    .usa-banner__button[aria-disabled=true]:hover {
-        color: GrayText
-    }
-}
 
 .usa-banner__button:visited {
     color: #54278f
@@ -439,38 +203,6 @@
         position: relative
     }
 
-    .usa-banner__button::after {
-        background-image: url(/sites/gsa.gov/themes/custom/gsa/dist/css/../img/usa-icons/expand_more.svg);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: 1rem 1rem;
-        display: inline-block;
-        height: 1rem;
-        width: 1rem;
-        content: "";
-        vertical-align: middle;
-        margin-left: 2px
-    }
-
-    @supports ((-webkit-mask:url()) or (mask:url())) {
-        .usa-banner__button::after {
-            background: 0 0;
-            background-color: #005ea2;
-            -webkit-mask-image: url(/sites/gsa.gov/themes/custom/gsa/dist/css/../img/usa-icons/expand_more.svg), linear-gradient(transparent, transparent);
-            mask-image: url(/sites/gsa.gov/themes/custom/gsa/dist/css/../img/usa-icons/expand_more.svg), linear-gradient(transparent, transparent);
-            -webkit-mask-position: center center;
-            mask-position: center center;
-            -webkit-mask-repeat: no-repeat;
-            mask-repeat: no-repeat;
-            -webkit-mask-size: 1rem 1rem;
-            mask-size: 1rem 1rem
-        }
-
-        .usa-banner__button::after:hover {
-            background-color: #1a4480
-        }
-    }
-
     .usa-banner__button:hover::after {
         content: "";
         background-color: #1a4480
@@ -491,36 +223,7 @@
     }
 }
 
-@media (min-width:40em) and (forced-colors:active) {
 
-    .usa-banner__button::after,
-    .usa-banner__button:hover::after {
-        background-color: ButtonText;
-    }
-}
-
-@media all and (min-width:40em) {
-    .usa-banner__button:hover {
-        text-decoration: none
-    }
-}
-
-.usa-banner__button[aria-expanded=false],
-.usa-banner__button[aria-expanded=false]:hover,
-.usa-banner__button[aria-expanded=true],
-.usa-banner__button[aria-expanded=true]:hover {
-    background-image: none
-}
-
-@media (forced-colors:active) {
-
-    .usa-banner__button[aria-expanded=false]::before,
-    .usa-banner__button[aria-expanded=false]:hover::before,
-    .usa-banner__button[aria-expanded=true]::before,
-    .usa-banner__button[aria-expanded=true]:hover::before {
-        content: none
-    }
-}
 
 @media all and (max-width:39.99em) {
     .usa-banner__button[aria-expanded=true]::after {
@@ -582,17 +285,42 @@
 
 @media (min-width:40em) {
     .usa-banner__header {
-        min-height: 18px !important
+        min-height: 12px !important
     }
 }
 
 @media  (max-width:639px) {
     
 .usa-banner__button-text {
+    padding-top: 14px;
     margin: 0 0 0 40px !important
 }
 
+.usa-banner__header {
+    margin: 0;
+    padding: 0;
+    min-height: 40px !important
 }
 
 
+.usa-banner__header-text {
+    margin-top: 4px;
+}
 
+.usa-banner__header-flag {
+    margin-top: .35rem;
+}
+
+.usa-banner__button {
+    margin: 0;
+    bottom: 0;
+    top: 0;
+    height: 56px;
+    padding: 0;
+}
+
+.usa-banner__content {
+    padding: .2rem 1rem 1rem .5rem;
+}
+
+}
