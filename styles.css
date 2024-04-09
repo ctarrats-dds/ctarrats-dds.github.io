@@ -3,13 +3,17 @@ body {
   background-color: #222222;
   background-repeat: no-repeat;
   background-size: 100vw 100%;
-  max-width: 1400px;
-  margin: auto;
-  padding: 0px 30px 20px 30px;
   font-family: "Space Grotesk", sans-serif;
   font-kerning: auto;
   overflow: visible;
+  margin: auto;
+  padding: 0;
+}
 
+.page-content {
+  max-width: 1400px;
+  margin: auto; 
+  padding: 0px 30px 30px 30px;
 }
 
 h1 {
@@ -219,6 +223,12 @@ padding: 0;
 }
 
 @media (max-width: 500px) {
+
+  .page-content {
+    padding: 0px 20px 30px 20px;
+  }
+
+
   .column {
     width: 100%;
     flex: auto;
